@@ -21,51 +21,51 @@
 
 **Ответ:**
 
-![alt text](https://github.com/Morfey29/sdb-13-01/blob/main/image/1.jpg)
+![alt text](https://github.com/Morfey29/sdb-13-01/blob/main/img/1.jpg)
 
 Сетевые службы и ссылки на уязвимости
 
-    Порт 21: FTP (vsftpd 2.3.4)
+Порт 21: FTP (vsftpd 2.3.4)
 
-        Уязвимость: Backdoor Command Execution. При отправке имени пользователя, содержащего символы :), открывается доступ к шеллу с правами root .
+Уязвимость: Backdoor Command Execution. При отправке имени пользователя, содержащего символы :), открывается доступ к шеллу с правами root .
 
-        Ссылка на Exploit-DB: https://www.exploit-db.com/exploits/49757 
+Ссылка на Exploit-DB: https://www.exploit-db.com/exploits/49757 
 
-    Порт 22: SSH (OpenSSH)
+Порт 22: SSH (OpenSSH)
 
-        Уязвимость: SSH Username Enumeration. Уязвимость позволяет перебирать имена пользователей на сервере, используя некорректные пакеты или timing-атаки .
+Уязвимость: SSH Username Enumeration. Уязвимость позволяет перебирать имена пользователей на сервере, используя некорректные пакеты или timing-атаки .
 
-        Ссылка на Exploit-DB: Модуль в Metasploit: auxiliary/scanner/ssh/ssh_enumusers 
+Ссылка на Exploit-DB: Модуль в Metasploit: auxiliary/scanner/ssh/ssh_enumusers 
 
-    Порт 23: Telnet (Linux TelnetD)
+Порт 23: Telnet (Linux TelnetD)
 
-        Уязвимость: Buffer Overflow. Уязвимость в обработчике шифрования позволяет выполнить произвольный код (CVE-2011-4862) .
+Уязвимость: Buffer Overflow. Уязвимость в обработчике шифрования позволяет выполнить произвольный код (CVE-2011-4862) .
 
-        Ссылка на Exploit-DB: https://www.exploit-db.com/exploits/18280/ 
+Ссылка на Exploit-DB: https://www.exploit-db.com/exploits/18280/ 
 
-    Порт 139/445: Samba (smbd 3.0.20-Debian)
+Порт 139/445: Samba (smbd 3.0.20-Debian)
 
-        Уязвимость: "Username map script" Command Execution. Позволяет выполнить произвольную команду без аутентификации (CVE-2007-2447) .
+Уязвимость: "Username map script" Command Execution. Позволяет выполнить произвольную команду без аутентификации (CVE-2007-2447) .
 
-        Ссылка на Exploit-DB: https://www.exploit-db.com/exploits/16320 
+Ссылка на Exploit-DB: https://www.exploit-db.com/exploits/16320 
 
-    Порт 6667: IRC (UnrealIRCd 3.2.8.1)
+Порт 6667: IRC (UnrealIRCd 3.2.8.1)
 
-        Уязвимость: Backdoor. Дистрибутив содержит троян, позволяющий удаленно выполнять команды (CVE-2010-2075) .
+Уязвимость: Backdoor. Дистрибутив содержит троян, позволяющий удаленно выполнять команды (CVE-2010-2075) .
 
-        Ссылка на Exploit-DB: https://www.exploit-db.com/exploits/13853 
+Ссылка на Exploit-DB: https://www.exploit-db.com/exploits/13853 
 
-    Порт 8180: HTTP (Apache Tomcat 5.5)
+Порт 8180: HTTP (Apache Tomcat 5.5)
 
-        Уязвимость: Default Credentials / WAR File Deployment. Возможность зайти в менеджер Tomcat с стандартными учетными данными (tomcat/tomcat) и развернуть вредоносный WAR-файл для получения reverse shell .
+Уязвимость: Default Credentials / WAR File Deployment. Возможность зайти в менеджер Tomcat с стандартными учетными данными (tomcat/tomcat) и развернуть вредоносный WAR-файл для получения reverse shell .
 
-        Ссылка на Exploit-DB: Модуль в Metasploit: auxiliary/scanner/http/tomcat_mgr_login и exploit/multi/http/tomcat_mgr_deploy 
+Ссылка на Exploit-DB: Модуль в Metasploit: auxiliary/scanner/http/tomcat_mgr_login и exploit/multi/http/tomcat_mgr_deploy 
 
-    Порт 1099: Java RMI
+Порт 1099: Java RMI
 
-        Уязвимость: Insecure Default Configuration. Уязвимость позволяет выполнить код, загружая удаленные классы через RMI Registry .
+Уязвимость: Insecure Default Configuration. Уязвимость позволяет выполнить код, загружая удаленные классы через RMI Registry .
 
-        Ссылка на Exploit-DB: Модуль в Metasploit: exploit/multi/misc/java_rmi_server 
+Ссылка на Exploit-DB: Модуль в Metasploit: exploit/multi/misc/java_rmi_server 
 
 
 Задание 2
